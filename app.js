@@ -40,3 +40,21 @@ const whichArrayIsLonger = () => {
   else if (second > first) return "Druga tablica jest dłuższa";
   else return "Tablice mają taką samą długość";
 };
+
+// Zadanie 3: Sprawdzanie zawartości tablicy
+
+// Mając daną tablicę  sprawdź, czy pierwszy element tablicy to "apple".
+// Jeżeli tak, wyświetl w konsoli informację "Pierwszy element tablicy to 'apple'", w przeciwnym razie wyświetl "Pierwszy element tablicy, to nie 'apple'".
+// Sprawdź oba warianty poniżej:
+
+const fruits = ["pear", "banana", "orange"];
+
+const fruits_v2 = ["apple", "banana", "orange"];
+
+const checkIfFirstElement = (array) => {
+  if (array[0] === "apple") console.log("Pierwszy element tablicy to 'apple'");
+  else console.log("Pierwszy element tablicy, to nie 'apple'");
+};
+
+checkIfFirstElement(fruits);
+checkIfFirstElement(fruits_v2);
